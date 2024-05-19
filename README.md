@@ -1,4 +1,4 @@
-# 🏗 AvalCertify - AvaxHachathon
+# 🏗 AvalCertify - Avalanche Hackathon
 
 **Emisión y Validación de Certificados en Blockchain**
 
