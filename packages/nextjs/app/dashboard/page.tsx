@@ -6,7 +6,7 @@ import { BugAntIcon } from "@heroicons/react/24/outline";
 
 const Dashboard: NextPage = () => {
   return (
-    <div className="mx-20">
+    <div className="mx-20 mt-5">
       <br />
       <div className="flex flex-col gap-4">
         <div className="flex flex-row gap-4">
@@ -29,12 +29,10 @@ const Dashboard: NextPage = () => {
         </div>
         <div className="flex flex-row gap-4">
           <div className="w-1/2">
-            {" "}
-            <AddCertificationForm />{" "}
+            <AddCertificationForm />
           </div>
           <div className="w-1/2">
-            {" "}
-            <AddUsersForm />{" "}
+            <AddUsersForm />
           </div>
         </div>
         <div className="flex flex-row gap-4">
