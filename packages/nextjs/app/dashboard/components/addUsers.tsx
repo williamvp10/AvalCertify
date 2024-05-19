@@ -43,8 +43,18 @@ export function AddUsersForm() {
         <div className="p-5 divide-y divide-base-300">
           <div className="flex flex-col gap-3 py-5 first:pt-0 last:pb-1">
             <p className="font-medium my-0 break-words">Address</p>
-            <Input placeholder="Wallet Address" value={address} onChange={e => setAddress(e.target.value)} />
-            <Select options={options} selectedOption={selectedOption} handleSelectChange={handleSelectChange} />
+            <Input
+              placeholder="Wallet Address"
+              name="walletAdress"
+              value={address}
+              onChange={e => setAddress(e.target.value)}
+            />
+            <Select
+              placeholder="Select an Option"
+              options={options}
+              selectedOption={selectedOption}
+              handleSelectChange={handleSelectChange}
+            />
             <div className="flex justify-between gap-2 flex-wrap">
               <div className="flex-grow w-4/5"></div>
               <button className="btn btn-secondary btn-sm" onClick={handleAddButtonClick}>
