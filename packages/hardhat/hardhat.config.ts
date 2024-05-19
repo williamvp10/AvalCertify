@@ -86,6 +86,14 @@ const config: HardhatUserConfig = {
       url: `https://polygonzkevm-testnet.g.alchemy.com/v2/${providerApiKey}`,
       accounts: [deployerPrivateKey],
     },
+    avalanche: {
+      url: `https://api.avax.network/ext/bc/C/rpc`,
+      accounts: [deployerPrivateKey],
+    },
+    fuji: {
+      url: `https://api.avax-test.network/ext/bc/C/rpc`,
+      accounts: [deployerPrivateKey],
+    },
     gnosis: {
       url: "https://rpc.gnosischain.com",
       accounts: [deployerPrivateKey],
