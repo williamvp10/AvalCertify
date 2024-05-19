@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Input } from "../../../components/elements/input";
 import { Select } from "../../../components/elements/select";
+import { useScaffoldWriteContract } from "~~/hooks/scaffold-eth";
 
 export function AddUsersForm() {
   const options = ["issuers", "signers"];
@@ -13,9 +14,21 @@ export function AddUsersForm() {
     setSelectedOption(event.target.value);
   };
 
-  const handleAddButtonClick = () => {
+  const { writeContractAsync: writeYourContractAsync } = useScaffoldWriteContract("AvalCertify");
+
+  const handleAddButtonClick = async () => {
     console.log("Address:", address);
     console.log("Selected option:", selectedOption);
+
+    try {
+      await writeYourContractAsync({
+        functionName: "addIssuer",
+        args: [address],
+        //value: parseEther("0.0"),
+      });
+    } catch (e) {
+      console.error("Error setting greeting:", e);
+    }
   };
 
   return (
