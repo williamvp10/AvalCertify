@@ -5,7 +5,18 @@
 
 🧪 Desarrollamos un sistema en la blockchain de Avalanche usando ERC721 para emitir certificados educativos como NFTs. Esto asegura la autenticidad, integridad y privacidad de los certificados, resolviendo problemas de falsificación y métodos de verificación lentos y costosos. El sistema permite a las instituciones emitir certificados, a los estudiantes recibirlos y a los validadores verificar su autenticidad de manera segura y eficiente.
 
+## Smart Contract
 
+Nuestro contrato inteligente está desplegado en la red Fuji. Puedes verlo en la siguiente dirección: [0x7CCf2D7f48a485A8a66aeb6FFC0A4a71Ab20EB00](https://subnets-test.avax.network/c-chain/address/0x7CCf2D7f48a485A8a66aeb6FFC0A4a71Ab20EB00)
+
+## Miembros del Equipo
+
+Nuestro proyecto es traído a ti por los siguientes miembros del equipo:
+
+- Jacqueline Parada Parada - Product Owner
+- Erika Monroy - Product Owner - Diseñadora UX/UI
+- Daniel Vasquez - Desarrollador Backend
+- William Vasquez - Desarrollador Frontend
 
 ## Requirements
 
