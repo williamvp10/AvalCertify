@@ -6,7 +6,7 @@ import { Select } from "../../../components/elements/select";
 import { useScaffoldWriteContract } from "~~/hooks/scaffold-eth";
 
 export function AddUsersForm() {
-  const options = ["issuers", "signers"];
+  const options = ["issuers"];
   const [address, setAddress] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
 
@@ -36,7 +36,7 @@ export function AddUsersForm() {
       <div className="bg-base-100 rounded-3xl shadow-md shadow-secondary border border-base-300 flex flex-col mt-10 relative max-w-screen-md w-full mx-4 sm:mx-auto">
         <div className="h-[5rem] w-[5.5rem] bg-base-300 absolute self-start rounded-[22px] -top-[38px] -left-[1px] -z-10 py-[0.65rem] shadow-lg shadow-base-300">
           <div className="flex items-center justify-center space-x-2">
-            <p className="my-0 text-sm">Add User</p>
+            <p className="my-0 text-sm">Add Issuers</p>
           </div>
         </div>
 
